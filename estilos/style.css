@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-1: #1f1d25;
+    --cor-2: #F6F1E9;
+    --cor-3: #78838f;
+    --cor-4: #555658;
+    --cor-5: #071222;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen {
+
+    body, html {
+        background-image: linear-gradient(to bottom, #555658 3%, #071222);
+    }
+
+    span#burguer {
+        background-color: rgb(56, 55, 58);
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    span#burguer:hover {
+        background-color: rgb(51, 50, 58);
+        color: black;
+    }
+
+    menu {
+        display:block;
+    }
+
+    menu ul {
+        list-style-type: none;
+    }
+
+    menu ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: var(--cor-4);
+        border: 2px solid rgba(0, 0, 0, 0.67);
+    }
+
+    menu ul li a:hover {
+        background-color: rgb(66, 65, 73);
+    }
+
+    main {
+        background-color: rgba(255, 255, 255, 0.077);
+        width: 60vw;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 257px;
+        border-radius: 13px;
+        padding: 10px;
+        box-shadow: 2px, 2px, 2px, 2px black;
+    }
+
+    main h1 {
+        color: var(--cor-3);
+        font-size: 4em;
+        font-family: var(--fonte-primaria);
+        text-shadow: 2px 2px 5px var(--cor-1);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    main h2 {
+        color: var(--cor-2);
+        text-align: center;
+        font-size: 1.8em;
+        font-family: var(--fonte-primaria);
+        margin-bottom: 5px;
+    }
+
+    main p {
+        color: var(--cor-2);
+        text-align: center;
+        font-size: 1.7em;
+        font-family: var(--fonte-secundaria);
+    }
+
+    main p strong {
+        color: var(--cor-3);
+        text-shadow: 1px 1px 2px var(--cor-3);
+
+    }
+
+
+    .rodape{
+        color: var(--cor-2);
+        background-color: var(--cor-1);
+        padding: 4px;
+        text-align: center;
+        font-family: var(--fonte-secundaria);
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+}
+
+@media only screen and (max-width: 415px) {
+    
+}
