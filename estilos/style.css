@@ -3,11 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-1: #1f1d25;
+    /*--cor-1: #1f1d25;
     --cor-2: #F6F1E9;
     --cor-3: #78838f;
     --cor-4: #555658;
-    --cor-5: #071222;
+    --cor-5: #071222;*/
+    --cor-2: #DDE6ED;
+    --cor-1: #9DB2BF;
+    --cor-3: #526D82;
+    --cor-4: #27374D;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -21,11 +25,11 @@
 @media only screen {
 
     body, html {
-        background-image: linear-gradient(to bottom, #555658 3%, #071222);
+        background-image: linear-gradient(to bottom, #8096a7 3%, #1a293e); /*#555658 3%, #071222*/
     }
 
     span#burguer {
-        background-color: rgb(56, 55, 58);
+        background-color: var(--cor-4);
         color: white;
         display: block;
         text-align: center;
@@ -34,7 +38,7 @@
     }
 
     span#burguer:hover {
-        background-color: rgb(51, 50, 58);
+        background-color: rgb(60, 77, 105);
         color: black;
     }
 
@@ -44,6 +48,8 @@
 
     menu ul {
         list-style-type: none;
+        font-family: var(--fonte-secundaria);
+
     }
 
     menu ul li a {
@@ -52,30 +58,31 @@
         text-decoration: none;
         text-align: center;
         color: white;
-        background-color: var(--cor-4);
+        background-color: var(--cor-3);
         border: 2px solid rgba(0, 0, 0, 0.67);
     }
 
     menu ul li a:hover {
-        background-color: rgb(66, 65, 73);
+        background-color: var(--cor-1);
+        font-weight: bolder;
     }
 
     main {
-        background-color: rgba(255, 255, 255, 0.077);
+        background-color: rgba(255, 255, 255, 0.091);
         width: 70vw;
         margin: auto;
         margin-top: 150px;
         margin-bottom: 257px;
         border-radius: 13px;
         padding: 10px;
-        box-shadow: 2px, 2px, 2px, 2px black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 
     main h1 {
-        color: var(--cor-3);
+        color: var(--cor-4);
         font-size: 4em;
         font-family: var(--fonte-primaria);
-        text-shadow: 2px 2px 5px var(--cor-1);
+        text-shadow: 1px 1px 2px var(--cor-1);
         margin-bottom: 10px;
         text-align: center;
     }
@@ -96,15 +103,15 @@
     }
 
     main p strong {
-        color: var(--cor-3);
-        text-shadow: 1px 1px 2px var(--cor-3);
-
+        color: var(--cor-2);
+        text-shadow: 1px 1px 2px var(--cor-2);
+        font-size: 1em;
     }
 
 
     .rodape{
         color: var(--cor-2);
-        background-color: var(--cor-1);
+        background-color: var(--cor-4);
         padding: 4px;
         text-align: center;
         font-family: var(--fonte-secundaria);
