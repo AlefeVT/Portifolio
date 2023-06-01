@@ -2,19 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+
 :root {
     /*--cor-1: #1f1d25;
     --cor-2: #F6F1E9;
     --cor-3: #78838f;
     --cor-4: #555658;
     --cor-5: #071222;*/
-    --cor-2: #DDE6ED;
-    --cor-1: #9DB2BF;
-    --cor-3: #526D82;
-    --cor-4: #27374D;
+    --cor-2: #E7F6F2;
+    --cor-1: #A5C9CA;
+    --cor-3: #2a2e2f;
+    --cor-4: #303438;
+    --cor-5: #a5a5a5;
 
     --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
+    /*--fonte-secundaria: 'Montserrat', sans-serif;*/
+    --fonte-secundaria: 'Roboto', sans-serif;
 }
 
 * {
@@ -25,7 +30,10 @@
 @media only screen {
 
     body, html {
-        background-image: linear-gradient(to bottom, #8096a7 3%, #1a293e); /*#555658 3%, #071222*/
+        background: url(../assets/Works\ —\ David\ Fokos.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        /*background-image: linear-gradient(to bottom, #8096a7 3%, #1a293e); /*#555658 3%, #071222*/
     }
 
     span#burguer {
@@ -38,7 +46,7 @@
     }
 
     span#burguer:hover {
-        background-color: rgb(60, 77, 105);
+        background-color: var(--cor-3);
         color: black;
     }
 
@@ -58,17 +66,17 @@
         text-decoration: none;
         text-align: center;
         color: white;
-        background-color: var(--cor-3);
+        background-color: var(--cor-4);
         border: 2px solid rgba(0, 0, 0, 0.67);
     }
 
     menu ul li a:hover {
-        background-color: var(--cor-1);
+        background-color: var(--cor-3);
         font-weight: bolder;
     }
 
     main {
-        background-color: rgba(255, 255, 255, 0.091);
+        background-color: rgba(255, 255, 255, 0.037);
         width: 70vw;
         margin: auto;
         margin-top: 150px;
@@ -79,10 +87,10 @@
     }
 
     main h1 {
-        color: var(--cor-4);
+        color: var(--cor-5);
         font-size: 4em;
         font-family: var(--fonte-primaria);
-        text-shadow: 1px 1px 2px var(--cor-1);
+        text-shadow: 1px 1px 2px var(--cor-2);
         margin-bottom: 10px;
         text-align: center;
     }
@@ -99,7 +107,9 @@
         color: var(--cor-2);
         text-align: center;
         font-size: 1.7em;
-        font-family: var(--fonte-secundaria);
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+
     }
 
     main p strong {
@@ -111,7 +121,7 @@
 
     .rodape{
         color: var(--cor-2);
-        background-color: var(--cor-4);
+        background-color: rgba(0, 0, 0, 0.673);
         padding: 4px;
         text-align: center;
         font-family: var(--fonte-secundaria);
